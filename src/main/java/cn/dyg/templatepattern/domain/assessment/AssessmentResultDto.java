@@ -3,10 +3,10 @@ package cn.dyg.templatepattern.domain.assessment;
 import lombok.Data;
 
 /**
- * @program: HttpClient->AssessmentResultDto
- * @description: 考核结果对象
- * @author: dongyinggang
- * @create: 2020-04-16 14:45
+ * AssessmentResultDto类是 考核结果对象
+ *
+ * @author dongyinggang
+ * @date 2020-04-16 14:45
  **/
 @Data
 public class AssessmentResultDto {

@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * ItemParam类（或接口）是 考核项的参数配置类
- * HttpClient->
  *
  * @author dongyinggang
  * @date 2020-04-16 17:29

@@ -49,7 +49,7 @@ public class TaskCompleteAbstractRateService extends AbstractRateTemplate {
         //模拟数据库查询的用例数的数组
         List<Double> taskCompleteRateList = new ArrayList<>();
         for (int i = 0; i < 60; i++) {
-            taskCompleteRateList.add(RandomUtil.randomDouble(0, 100,2, RoundingMode.HALF_DOWN));
+            taskCompleteRateList.add(RandomUtil.randomDouble(0, 100, 2, RoundingMode.HALF_DOWN));
         }
         //模拟出现重复的情况
         for (int i = 0; i < 5; i++) {
@@ -79,7 +79,7 @@ public class TaskCompleteAbstractRateService extends AbstractRateTemplate {
     @Override
     String calInterval(ItemParam itemParam, List<Double> assessmentList, int index, int rangeIndex) {
         //计算的是降序list的区间(考核项值越大越好)
-        return CommonService.calIntervalDesc(itemParam, assessmentList, index,rangeIndex);
+        return CommonService.calIntervalDesc(itemParam, assessmentList, index, rangeIndex);
     }
 
     /**

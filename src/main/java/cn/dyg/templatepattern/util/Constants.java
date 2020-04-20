@@ -1,11 +1,11 @@
 package cn.dyg.templatepattern.util;
 
 /**
- * @program: HttpClient->Constants
- * @description: 常量类
- * @author: dongyinggang
- * @create: 2020-04-16 15:25
- **/
+ * Constants 类（或接口）是 常量类
+ *
+ * @author dongyinggang
+ * @date 2020/4/20
+ */
 public class Constants {
 
     public static String DESC = "desc";

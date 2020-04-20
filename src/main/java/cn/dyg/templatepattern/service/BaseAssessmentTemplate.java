@@ -19,7 +19,7 @@ public abstract class BaseAssessmentTemplate {
      * @author dongyinggang
      * @date 2020/4/16 18:16
      */
-    public final void execute(){
+    public final void execute() {
 
         //生产中由各子类可以查询数据库获取
         List<ItemParam> itemParamList = getItemParam();
@@ -44,7 +44,7 @@ public abstract class BaseAssessmentTemplate {
      * getAssessmentResult方法是 根据参数得到考核结果
      *
      * @param itemParamList 考核项的可配置参数
-     * @return  考核结果
+     * @return 考核结果
      * @author dongyinggang
      * @date 2020/4/16 16:10
      */
@@ -57,14 +57,14 @@ public abstract class BaseAssessmentTemplate {
      * @author dongyinggang
      * @date 2020/4/16 16:15
      */
-    private void printAssessmentResult(List<AssessmentResultDto> resultList){
-        if(resultList.isEmpty()){
+    private void printAssessmentResult(List<AssessmentResultDto> resultList) {
+        if (resultList.isEmpty()) {
             System.out.println("未查询到该考核项数据,未生成汇总数据!");
             return;
         }
         System.out.println("该考核项汇总信息如下：");
-        System.out.printf("%-10s %-5s %-5s %-20s %-5s %-5s %n","考核项","结果","比例","区间","人数","考核得分");
-        for(AssessmentResultDto assessmentResult:resultList){
+        System.out.printf("%-10s %-5s %-5s %-20s %-5s %-5s %n", "考核项", "结果", "比例", "区间", "人数", "考核得分");
+        for (AssessmentResultDto assessmentResult : resultList) {
             assessmentResult.printResult();
         }
         //打印空行,分隔开,空两行
@@ -77,7 +77,7 @@ public abstract class BaseAssessmentTemplate {
      * @author dongyinggang
      * @date 2020/4/16 18:33
      */
-    String hock(){
+    String hock() {
         return "";
     }
 

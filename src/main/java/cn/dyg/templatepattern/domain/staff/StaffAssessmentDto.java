@@ -3,11 +3,11 @@ package cn.dyg.templatepattern.domain.staff;
 import lombok.Data;
 
 /**
- * @program: HttpClient->StaffAssessmentDto
- * @description: 员工考核信息
- * @author: dongyinggang
- * @create: 2020-04-16 13:40
- **/
+ * StaffAssessmentDto 类（或接口）是 员工考核信息
+ *
+ * @author dongyinggang
+ * @date 2020/4/20
+ */
 @Data
 public class StaffAssessmentDto {
 

@@ -7,7 +7,7 @@ import cn.dyg.templatepattern.service.ReworkRateService;
 import cn.dyg.templatepattern.service.TaskCompleteAbstractRateService;
 
 /**
- * App类(接口)是
+ * App类(接口)是 程序入口
  *
  * @author dongyinggang
  * @date 2020-04-19 14:27

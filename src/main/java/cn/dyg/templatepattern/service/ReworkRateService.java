@@ -14,7 +14,7 @@ import java.util.List;
  * @author dongyinggang
  * @date 2020-04-19 16:42
  **/
-public class ReworkRateService extends AbstractRateTemplate{
+public class ReworkRateService extends AbstractRateTemplate {
     /**
      * getItemParam方法是 获取考核项(开发返工率)的参数
      *
@@ -49,7 +49,7 @@ public class ReworkRateService extends AbstractRateTemplate{
         //模拟数据库查询的用例数的数组
         List<Double> reworkRateList = new ArrayList<>();
         for (int i = 0; i < 60; i++) {
-            reworkRateList.add(RandomUtil.randomDouble(0, 80,2, RoundingMode.HALF_DOWN));
+            reworkRateList.add(RandomUtil.randomDouble(0, 80, 2, RoundingMode.HALF_DOWN));
         }
         //模拟出现重复的情况
         for (int i = 0; i < 5; i++) {
@@ -79,12 +79,12 @@ public class ReworkRateService extends AbstractRateTemplate{
      */
     @Override
     String calInterval(ItemParam itemParam, List<Double> assessmentList, int index, int rangeIndex) {
-        return CommonService.calIntervalAsc(itemParam, assessmentList, index,rangeIndex);
+        return CommonService.calIntervalAsc(itemParam, assessmentList, index, rangeIndex);
     }
 
     /**
      * intervalHock方法是 钩子方法,子类可以覆盖这个方法做一定处理(但非必须),并依此做到控制模板流程
-     *
+     * <p>
      * 在这里通过返回不同desc或asc来控制计算区间调用的方法
      *
      * @author dongyinggang

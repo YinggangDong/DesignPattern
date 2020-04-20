@@ -57,7 +57,7 @@ public class CaseNumService extends BaseAssessmentTemplate {
         //获取随机生成的考核值数组
         Integer[] caseNumArray = getAssessmentValue();
         //如果为空,直接返回空list
-        if(ArrayUtil.isEmpty(caseNumArray)){
+        if (ArrayUtil.isEmpty(caseNumArray)) {
             return assessmentList;
         }
         //记录当前已经遍历到有序数组的哪个位置
@@ -80,11 +80,11 @@ public class CaseNumService extends BaseAssessmentTemplate {
     /**
      * getRangeIndex方法是 设置当前等级的统计结果,并返回进行到了哪一个下标
      *
-     * @param itemParam 当前等级的初始信息
+     * @param itemParam      当前等级的初始信息
      * @param assessmentList 最终返回的list结果
-     * @param caseNumArray 存储考核项值的数组
-     * @param index 上一个等级进行到了哪个下标
-     * @return  当前等级进行到了哪个下标
+     * @param caseNumArray   存储考核项值的数组
+     * @param index          上一个等级进行到了哪个下标
+     * @return 当前等级进行到了哪个下标
      * @author dongyinggang
      * @date 2020/4/19 13:57
      */
@@ -107,7 +107,7 @@ public class CaseNumService extends BaseAssessmentTemplate {
         }
 
         //根据计算结果设置当前grade的属性
-        CommonService.setGradeInfo(itemParam, assessmentList,interval,personNum);
+        CommonService.setGradeInfo(itemParam, assessmentList, interval, personNum);
 
         return actualRangeIndex;
     }
@@ -115,10 +115,10 @@ public class CaseNumService extends BaseAssessmentTemplate {
     /**
      * calIntervalIntDesc方法是 计算区间,计算的是降序list的区间(考核项值越大越好)
      *
-     * @param itemParam 考核项基础信息
+     * @param itemParam    考核项基础信息
      * @param caseNumArray 考核项值的升序list
-     * @param index 上一个等级结束的位置
-     * @param rangeIndex 当前等级的结束位置
+     * @param index        上一个等级结束的位置
+     * @param rangeIndex   当前等级的结束位置
      * @return 计算得到的区间值
      * @author dongyinggang
      * @date 2020/4/19 15:43
@@ -170,7 +170,7 @@ public class CaseNumService extends BaseAssessmentTemplate {
         Integer[] caseNumArrays = new Integer[caseNumList.size()];
         caseNumList.toArray(caseNumArrays);
 
-        System.out.println("用例数量原始数据如下：\n"+Arrays.toString(caseNumArrays));
+        System.out.println("用例数量原始数据如下：\n" + Arrays.toString(caseNumArrays));
         return caseNumArrays;
     }
 

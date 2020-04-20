@@ -49,7 +49,7 @@ public class MissCheckRateService extends AbstractRateTemplate {
         //模拟数据库查询的用例数的数组
         List<Double> missCheckRateList = new ArrayList<>();
         for (int i = 0; i < 60; i++) {
-            missCheckRateList.add(RandomUtil.randomDouble(0, 30,2, RoundingMode.HALF_DOWN));
+            missCheckRateList.add(RandomUtil.randomDouble(0, 30, 2, RoundingMode.HALF_DOWN));
         }
         //模拟出现重复的情况
         for (int i = 0; i < 5; i++) {
@@ -89,7 +89,7 @@ public class MissCheckRateService extends AbstractRateTemplate {
      */
     @Override
     String calInterval(ItemParam itemParam, List<Double> assessmentList, int index, int rangeIndex) {
-        return CommonService.calIntervalAsc(itemParam, assessmentList, index,rangeIndex);
+        return CommonService.calIntervalAsc(itemParam, assessmentList, index, rangeIndex);
     }
 
 
