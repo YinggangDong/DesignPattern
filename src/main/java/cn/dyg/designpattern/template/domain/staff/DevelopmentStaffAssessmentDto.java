@@ -1,4 +1,4 @@
-package cn.dyg.templatepattern.domain.staff;
+package cn.dyg.designpattern.template.domain.staff;
 
 import lombok.Data;
 

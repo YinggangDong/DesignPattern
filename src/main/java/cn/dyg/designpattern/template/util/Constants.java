@@ -1,4 +1,4 @@
-package cn.dyg.templatepattern.util;
+package cn.dyg.designpattern.template.util;
 
 /**
  * Constants 类（或接口）是 常量类

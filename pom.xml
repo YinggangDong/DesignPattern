@@ -5,12 +5,12 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.dyg</groupId>
-    <artifactId>templatePattern</artifactId>
+    <artifactId>designPattern</artifactId>
     <version>1.0.0</version>
     <name>${project.artifactId}</name>
 
     <build>
-        <finalName>template_pattern</finalName>
+        <finalName>design_pattern</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -1,7 +1,7 @@
-package cn.dyg.templatepattern.service;
+package cn.dyg.designpattern.template.service;
 
-import cn.dyg.templatepattern.domain.assessment.AssessmentResultDto;
-import cn.dyg.templatepattern.domain.assessment.ItemParam;
+import cn.dyg.designpattern.template.domain.assessment.AssessmentResultDto;
+import cn.dyg.designpattern.template.domain.assessment.ItemParam;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.NumberUtil;
 

@@ -1,6 +1,6 @@
-package cn.dyg.templatepattern.service;
+package cn.dyg.designpattern.template.service;
 
-import cn.dyg.templatepattern.domain.assessment.ItemParam;
+import cn.dyg.designpattern.template.domain.assessment.ItemParam;
 import cn.hutool.core.util.RandomUtil;
 
 import java.math.RoundingMode;

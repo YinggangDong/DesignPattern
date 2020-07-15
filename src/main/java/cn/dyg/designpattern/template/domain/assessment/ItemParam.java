@@ -1,4 +1,4 @@
-package cn.dyg.templatepattern.domain.assessment;
+package cn.dyg.designpattern.template.domain.assessment;
 
 import cn.hutool.core.util.NumberUtil;
 import lombok.AllArgsConstructor;

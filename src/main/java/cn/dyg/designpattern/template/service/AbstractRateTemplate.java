@@ -1,8 +1,8 @@
-package cn.dyg.templatepattern.service;
+package cn.dyg.designpattern.template.service;
 
-import cn.dyg.templatepattern.domain.assessment.AssessmentResultDto;
-import cn.dyg.templatepattern.domain.assessment.ItemParam;
-import cn.dyg.templatepattern.util.Constants;
+import cn.dyg.designpattern.template.domain.assessment.AssessmentResultDto;
+import cn.dyg.designpattern.template.domain.assessment.ItemParam;
+import cn.dyg.designpattern.template.util.Constants;
 import cn.hutool.core.collection.CollectionUtil;
 
 import java.util.ArrayList;

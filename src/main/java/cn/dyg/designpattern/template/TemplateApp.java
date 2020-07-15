@@ -1,19 +1,18 @@
-package cn.dyg.templatepattern;
+package cn.dyg.designpattern.template;
 
-import cn.dyg.templatepattern.service.BaseAssessmentTemplate;
-import cn.dyg.templatepattern.service.CaseNumService;
-import cn.dyg.templatepattern.service.MissCheckRateService;
-import cn.dyg.templatepattern.service.ReworkRateService;
-import cn.dyg.templatepattern.service.TaskCompleteAbstractRateService;
+import cn.dyg.designpattern.template.service.BaseAssessmentTemplate;
+import cn.dyg.designpattern.template.service.CaseNumService;
+import cn.dyg.designpattern.template.service.MissCheckRateService;
+import cn.dyg.designpattern.template.service.ReworkRateService;
+import cn.dyg.designpattern.template.service.TaskCompleteAbstractRateService;
 
 /**
- * App类(接口)是 程序入口
+ * TemplateApp 类是 模板设计模式样例启动类
  *
  * @author dongyinggang
- * @date 2020-04-19 14:27
+ * @date 2020-07-15 11:49
  **/
-public class App {
-
+public class TemplateApp {
     public static void main(String[] args) {
         BaseAssessmentTemplate caseNumService = new CaseNumService();
         caseNumService.execute();

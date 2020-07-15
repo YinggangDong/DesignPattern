@@ -1,4 +1,4 @@
-package cn.dyg.templatepattern.domain.assessment;
+package cn.dyg.designpattern.template.domain.assessment;
 
 import lombok.Data;
 
