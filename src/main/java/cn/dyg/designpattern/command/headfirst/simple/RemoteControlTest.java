@@ -1,6 +1,7 @@
 package cn.dyg.designpattern.command.headfirst.simple;
 
 import cn.dyg.designpattern.command.headfirst.simple.command.impl.GarageDoorOpenCommand;
+import cn.dyg.designpattern.command.headfirst.simple.command.impl.NoCommand;
 import cn.dyg.designpattern.command.headfirst.simple.entity.GarageDoor;
 import cn.dyg.designpattern.command.headfirst.simple.entity.Light;
 import cn.dyg.designpattern.command.headfirst.simple.command.impl.LightOnCommand;
@@ -33,6 +34,10 @@ public class RemoteControlTest {
         //设置invoker的命令对象为garageDoorOpenCommand
         remote.setCommand(garageDoorOpenCommand);
         //执行开启车库门命令的execute()方法,执行开启车库门命令
+        remote.buttonWasPressed();
+
+        //空命令对象（空对象模式）,用来减少null校验,它的execute()方法不执行任何操作
+        remote.setCommand(new NoCommand());
         remote.buttonWasPressed();
     }
 }
