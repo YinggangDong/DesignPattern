@@ -26,11 +26,13 @@ public class RemoteControlTest {
         //执行开灯命令对象的execute方法,执行开灯命令
         remote.buttonWasPressed();
 
+        //创建一个车库门对象
         GarageDoor garageDoor = new GarageDoor();
-
+        //创建一个车库门打开命令对象
         GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(garageDoor);
-
+        //设置invoker的命令对象为garageDoorOpenCommand
         remote.setCommand(garageDoorOpenCommand);
+        //执行开启车库门命令的execute()方法,执行开启车库门命令
         remote.buttonWasPressed();
     }
 }

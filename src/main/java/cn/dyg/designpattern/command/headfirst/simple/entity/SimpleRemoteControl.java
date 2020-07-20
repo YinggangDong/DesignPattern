@@ -4,7 +4,6 @@ import cn.dyg.designpattern.command.headfirst.simple.command.Command;
 
 /**
  * SimpleRemoteControl 类是 简易遥控器类
- * <p>
  * 命令模式中的调用者invoker
  *
  * @author dongyinggang

@@ -4,7 +4,7 @@ import cn.dyg.designpattern.command.headfirst.simple.command.Command;
 import cn.dyg.designpattern.command.headfirst.simple.entity.GarageDoor;
 
 /**
- * GarageDoorOpenCommand 类是
+ * GarageDoorOpenCommand 类是 开启车库门命令类
  *
  * @author dongyinggang
  * @date 2020-07-15 16:36
