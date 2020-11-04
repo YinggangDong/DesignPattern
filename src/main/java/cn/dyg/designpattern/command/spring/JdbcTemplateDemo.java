@@ -4,7 +4,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 /**
- * JdbcTemplate 类是
+ * JdbcTemplate 类是 jdbc连接demo
  *
  * @author dongyinggang
  * @date 2020-07-16 11:49
