@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * TaskCompleteRateService类(接口)是
+ * TaskCompleteRateService类(接口)是 任务完成率的计算接口
  *
  * @author dongyinggang
  * @date 2020-04-19 17:08
